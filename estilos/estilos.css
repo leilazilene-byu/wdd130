@@ -41,7 +41,7 @@ p {
 }
 
 main {
-    width: 80%;
+    max-width: 80%;
 }
 
 aside {
