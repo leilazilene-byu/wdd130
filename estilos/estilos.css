@@ -25,6 +25,8 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin-left: 1rem;
 }
 
 p {
@@ -53,6 +55,7 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    position:relative;
 }
 
 aside img {
@@ -73,4 +76,9 @@ footer {
     border: 1px solid darkblue;
     background-color: #f4f4f9;
     color: #333333;
+}
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
