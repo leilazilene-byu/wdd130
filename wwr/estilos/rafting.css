@@ -67,3 +67,8 @@
         background-color: var(--cor-destaque1);
         color: #fff;
     }
+
+    .hero article imag {
+        float: right;
+        width: 125px;
+    }
