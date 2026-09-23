@@ -22,9 +22,7 @@ body {
     color: var(--cor-destaque1);
 }
 
-header,
-main,
-footer {
+header, main, footer, section {
     width: 840px;
     margin: 0 auto;
 }
@@ -37,8 +35,7 @@ footer {
     background-color: var(--cor-destaque2);
 }
 
-h1,
-h2 {
+h1, h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
@@ -46,7 +43,6 @@ h2 {
 
 nav,
 p,
-section,
 article {
     margin: 16px;
     padding: 8px;
@@ -79,7 +75,7 @@ article {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
+    bottom: 160px;
     left: 20px;
     right: 20px;
 
@@ -91,4 +87,75 @@ article {
     float: right;
     width: 125px;
     margin-left: 16px;
+}
+
+/* novas atualizações */
+#area-navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#links-navegacao{
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: solid 2px #000;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#links-navegacao a {
+    padding: 8px 15px;
+    border-right: 1px solid #777;
+}
+
+#links-navegacao a:last-child {
+    border-right: none;
+}
+
+#area-historia{
+    background-color: #86bcd1;
+}
+
+.história{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.história img{
+    width: 250px;
+}
+
+.história p{
+    text-align: left;
+}
+
+#aventuras{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+figure img{
+    width: 160px;
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+a img{
+    width: 50px;
 }
