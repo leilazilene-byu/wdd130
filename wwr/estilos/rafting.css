@@ -33,6 +33,8 @@ header {
 
 footer {
     background-color: var(--cor-destaque2);
+    display: flex;
+    justify-content: flex-end;
 }
 
 h1, h2 {
@@ -151,10 +153,6 @@ figcaption{
     text-align: center;
 }
 
-footer{
-    display: flex;
-    justify-content: flex-end;
-}
 
 a img{
     width: 50px;
