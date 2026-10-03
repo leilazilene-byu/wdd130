@@ -93,14 +93,14 @@ article {
 
 /* novas atualizações */
 #area-navegacao{
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 1fr;
     align-items: center;
-    justify-content: space-around;
 }
 
 #links-navegacao{
     display: flex;
-    gap: 10px;
+    justify-content: flex-end;
     background-color: #fff;
     padding: 10px;
     border: solid 2px #000;
@@ -156,4 +156,60 @@ figcaption{
 
 a img{
     width: 50px;
+}
+.contato-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contato-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin: 30px 0;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea,
+form button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+.equipe {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.funcionarios {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.funcionarios figure {
+    width: 200px;
+}
+
+.funcionarios img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
