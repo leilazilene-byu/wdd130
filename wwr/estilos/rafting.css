@@ -1,13 +1,9 @@
 :root {
     --cor-primaria: #055a05;
-    /* Verde-floresta */
     --cor-secundaria: #f4a261;
-    /* Bege médio */
     --cor-destaque1: #264653;
-    /* Azul-escuro acinzentado */
     --cor-destaque2: #e9c46a;
-    /* Amarelo-claro dourado */
-    --fonte-titulo: "Times New Roman", "Georgia", serif;
+    --fonte-titulo: "Times New Roman", Georgia, serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
 
@@ -22,7 +18,9 @@ body {
     color: var(--cor-destaque1);
 }
 
-header, main, footer, section {
+header,
+main,
+footer {
     width: 840px;
     margin: 0 auto;
 }
@@ -35,9 +33,11 @@ footer {
     background-color: var(--cor-destaque2);
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
@@ -50,9 +50,20 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.redes-sociais a {
     text-decoration: none;
 }
+
+a img {
+    width: 50px;
+}
+
+/* HERO */
 
 .hero {
     position: relative;
@@ -80,8 +91,7 @@ article {
     bottom: 160px;
     left: 20px;
     right: 20px;
-
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
 }
 
@@ -91,24 +101,20 @@ article {
     margin-left: 16px;
 }
 
-/* novas atualizações */
-#area-navegacao{
+/* NAVEGAÇÃO */
+
+#area-navegacao {
     display: grid;
     grid-template-columns: 300px 1fr;
     align-items: center;
 }
 
-#links-navegacao{
+#links-navegacao {
     display: flex;
     justify-content: flex-end;
     background-color: #fff;
     padding: 10px;
-    border: solid 2px #000;
-}
-
-a{
-    text-decoration: none;
-    color: #000;
+    border: 2px solid #000;
 }
 
 #links-navegacao a {
@@ -120,46 +126,48 @@ a{
     border-right: none;
 }
 
-#area-historia{
+/* HISTÓRIA */
+
+#area-historia {
     background-color: #86bcd1;
 }
 
-.história{
+.história {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
 }
 
-.história img{
+.história img {
     width: 250px;
 }
 
-.história p{
+.história p {
     text-align: left;
 }
 
-#aventuras{
+/* AVENTURAS */
+
+#aventuras {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
 }
 
-figure img{
+figure img {
     width: 160px;
 }
 
-figcaption{
+figcaption {
     text-align: center;
 }
 
+/* PÁGINA DE CONTATO */
 
-a img{
-    width: 50px;
-}
 .contato-info {
     text-align: center;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .contato-area {
@@ -172,13 +180,17 @@ a img{
 
 .mapa iframe {
     width: 100%;
-    height: 300px;
+    height: 350px;
+    border: 0;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    padding: 20px;
+    border: 1px solid #777;
+    border-radius: 8px;
 }
 
 form input,
@@ -188,9 +200,28 @@ form button {
     font-size: 1rem;
 }
 
+form textarea {
+    resize: vertical;
+}
+
 fieldset {
     padding: 10px;
 }
+
+fieldset label {
+    display: block;
+    margin: 8px 0;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* EQUIPE */
 
 .equipe {
     text-align: center;
@@ -202,6 +233,7 @@ fieldset {
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .funcionarios figure {
